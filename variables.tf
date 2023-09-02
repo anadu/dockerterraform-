@@ -3,6 +3,6 @@ variable "username"{
 }
 
 variable "password" {
-  default = Kishore012
+  default = "Kishore012"
 
 }
