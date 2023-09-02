@@ -10,7 +10,7 @@ resource "docker_image" "terraform" {
 
 resource "docker_container" "foo" {
   name  = "foo"
-  image = docker_image.teraform.image_id
+  image = docker_image.terraform.image_id
 
   ports {
     internal = "80"
