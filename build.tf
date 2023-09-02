@@ -1,4 +1,4 @@
-resource "docker_image" "zoo" {
+resource "docker_image" "terraform" {
   name = "terraform"
   build {
     context = "."
@@ -10,7 +10,7 @@ resource "docker_image" "zoo" {
 
 resource "docker_container" "foo" {
   name  = "foo"
-  image = docker_image.zoo.image_id
+  image = docker_image.teraform.image_id
 
   ports {
     internal = "80"
