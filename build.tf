@@ -1,5 +1,5 @@
 resource "docker_image" "terraform" {
-  name = "terraform"
+  name = "000100000/terraform"
   build {
     context = "."
   }
