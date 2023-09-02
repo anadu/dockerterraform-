@@ -1,6 +1,6 @@
 resource "null_resource" "push_to_registry" {
   triggers = {
-    image_id = docker_image.terraform.latest
+    image_id = docker_image.terraform.image_id
   }
 
   provisioner "local-exec" {
