@@ -4,6 +4,6 @@ resource "null_resource" "push_to_registry" {
   }
 
   provisioner "local-exec" {
-    command = "https://index.docker.io/v1/terraform:latest" # Replace with your registry URL and image name
+    command = "docker push 000100000/terraform:latest" # Replace with your registry URL and image name
   }
 }
