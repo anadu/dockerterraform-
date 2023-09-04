@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-               sh git branch: 'main', url: 'https://github.com/anadu/dockerterraform-'
-            }
-        }
+        
         stage('Terraform init') {
             steps {
                 sh 'terraform init'
