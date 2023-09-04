@@ -2,6 +2,10 @@ pipeline {
     agent any
 
     stages {
+        stage('checkout')
+           steps {
+              git credentialsId: 'tfe', url: 'https://github.com/anadu/dockerterraform-.git'
+           }
         
         stage('Terraform init') {
             steps {
