@@ -14,6 +14,6 @@ resource "docker_container" "foo" {
 
   ports {
     internal = "80"
-    external = "8080"
+    external = "8090"
   }
 }
