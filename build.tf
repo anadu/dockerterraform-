@@ -8,12 +8,12 @@ resource "docker_image" "terraform" {
   }
 }
 
-resource "docker_container" "foo" {
-  name  = "foo"
+resource "docker_container" "kishore" {
+  name  = "checking"
   image = docker_image.terraform.image_id
 
   ports {
     internal = "80"
-    external = "8090"
+    external = "9000"
   }
 }
