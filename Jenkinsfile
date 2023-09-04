@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/anadu/dockerterraform-'
+               sh git branch: 'main', url: 'https://github.com/anadu/dockerterraform-'
             }
         }
         stage('Terraform init') {
